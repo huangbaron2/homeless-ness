@@ -28,4 +28,4 @@ def show_graph():
 	content = content.decode()
 	return (appcode.receive_year(content)) 
 
-bottle.run(host = '0.0.0.0', port = 8080, debug = True)
+bottle.run(debug = True)
