@@ -1,0 +1,14 @@
+[[package]]
+category = "main"
+description = "Fast and simple WSGI-framework for small web-applications."
+name = "bottle"
+optional = false
+python-versions = "*"
+version = "0.12.17"
+
+[metadata]
+content-hash = "c6d6149de500726b3dc7f75f01cda9e06d26463e046c913bd68539488daa7821"
+python-versions = "^3.7"
+
+[metadata.hashes]
+bottle = ["1896a33b2c7c5be07491e6789e341f2e9593a0ff024cc0374615118587c81647", "e9eaa412a60cc3d42ceb42f58d15864d9ed1b92e9d630b8130c871c5bb16107c"]

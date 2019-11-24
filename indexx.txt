@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src='script.js'></script>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<link type="text/css" rel='stylesheet' href= "styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<title> Project 2 </title>
+</head>
+
+<body onClick = 'showGraph()'>
+	<div>	
+		
+		<h1>Top 15 Most Complained Auto-Insurance Companies in NYS, sorted by year</h1> 
+
+		<form>
+ 		 	<h2 id = 'prompt' style="color: black"> Enter a Year From 2009 to 2017 </h2>  
+
+		 	<input class = 'input' type="text" id = 'inputYear'> </input>
+
+			  <br>
+
+			<input id = 'both' class = 'btn' type = 'button' value = 'BOTH' onClick = 'sendYear()' ></input>
+
+			<br>
+			<div>
+				<input class = 'btn' id = 'pieBTN' type = 'button' value = 'PIECHART'  onClick = 'pieColor()' href="#top"></input>
+
+				<input class = 'btn' id = 'tableBTN' type = 'button' value = 'TABLE' onClick = 'tableColor()'></input>
+			</div>
+
+			<h3 id = 'fetching'> Please allow a few seconds for chart to load </h3>
+
+		</form>
+		
+		<h4 style = 'font-weight: normal' style="display: inline" id ='year'> No data selected </h4>
+		<br>
+
+		<div class = 'graphs'>
+			<div class = 'pieDiv' style="display: none" id = 'yearGraph'> </div>
+			<br>
+			<div class = 'tableDiv' style="display: none" id ='table'> </div>
+		</div>
+
+		
+	</div>
+
+</body>
+
+</html>

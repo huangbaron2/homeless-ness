@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src='script.js'></script>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<link type="text/css" rel='stylesheet' href= "styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<title> Project 2 </title>
+</head>
+
+<body onClick = 'showGraph()'>
+	<div>	
+			<h1>Directory Of Homeless Population By Year</h1> 
+
+		<form>
+ 		 	<h2 id = 'prompt' style="color: black"> Select a Year </h2>  
+<!--
+		<div class="dropdown">
+  		<div id = 'dropbtn' class="dropbtn"> Select your year </div>
+			<div class="dropdown-content">
+				<input type = 'button' value = '2009' onClick = 'dropBTN(2009)'> 2009 </input>
+				<a onClick = 'dropBTN(2010)'> 2010 </a>
+			</div>
+		</div>
+-->
+
+		 	<form class = 'dropDown'>
+				<select onClick = 'showGraph()' onClick = 'sendYear(value)' onchange = 'sendYear(value)' class = 'dropDown' id = "inputYear" name = "year">
+					<option value = "2009"> 2009 </option>
+					<option value = "2010"> 2010 </option>
+					<option value = "2011"> 2011 </option>
+					<option value = "2012"> 2012 </option>
+				</select>
+			</form>
+
+			<div>
+				<input class = 'btn' id = 'pieBTN' type = 'button' value = 'PIECHART'  onClick = 'pieColor()' href="#graphs"></input>
+				<input class = 'btn' id = 'tableBTN' type = 'button' value = 'TABLE' onClick = 'tableColor()'> </input>
+			</div>
+
+		<h4 style='visibility: visible' id ='fetching'> No data selected </h4>
+
+		<div id = 'divgraph' class = 'graphs' style="display: none">
+			<div class = 'pieDiv' style="display: none" id = 'yearGraph'> </div>
+			<br>
+			<div class = 'tableDiv' style="display: none" id ='table' name = 'table'> </div>
+		</div>
+
+</body>
+
+</html>
